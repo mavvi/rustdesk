@@ -19,7 +19,7 @@ ufw allow 21116/udp
 sudo ufw enable
 Run the following commands:
 
-wget https://raw.githubusercontent.com/dinger1986/rustdeskinstall/master/install.sh
+wget https://github.com/mavvi/rustdesk/blob/main/install.sh
 chmod +x install.sh
 ./install.sh
 Choose your preferences from the options given in the script.
@@ -29,7 +29,7 @@ Please Note: If you allow the script to create preconfigured install files (with
 How to update the server
 Run the following commands:
 
-wget https://raw.githubusercontent.com/techahold/rustdeskinstall/master/update.sh
+wget https://github.com/mavvi/rustdesk/blob/main/update.sh
 chmod +x update.sh
 ./update.sh
 Rustdesk windows powershell install script
