@@ -13,10 +13,10 @@ Make sure you have got access via ssh or otherwise setup prior setting up the fi
 ufw allow proto tcp from YOURIP to any port 22
 If you have UFW installed use the following commands (you only need port 8000 if you are using the preconfigured install files):
 
-ufw allow 21115:21119/tcp
-ufw allow 8000/tcp
-ufw allow 21116/udp
-sudo ufw enable
+ufw allow 21115:21119/tcp  
+ufw allow 8000/tcp  
+ufw allow 21116/udp  
+sudo ufw enable  
 Run the following commands:
 
 wget https://github.com/mavvi/rustdesk/blob/main/install.sh
@@ -29,14 +29,14 @@ Please Note: If you allow the script to create preconfigured install files (with
 How to update the server
 Run the following commands:
 
-wget https://github.com/mavvi/rustdesk/blob/main/update.sh
-chmod +x update.sh
-./update.sh
+wget https://github.com/mavvi/rustdesk/blob/main/update.sh  
+chmod +x update.sh  
+./update.sh  
 Rustdesk windows powershell install script
 Generates a powershell script for install grabbing WAN IP and Key currently in /opt/rustdesk but will be moved to a web url for easy deployment.
 
 Tips
 If you want to restart the services use the following commands:
 
-sudo systemctl restart rustdesksignal
+sudo systemctl restart rustdesksignal  
 sudo systemctl restart rustdeskrelay
